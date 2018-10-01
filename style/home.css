@@ -9,7 +9,7 @@ header{
     height:95px;
     background-color: black;
 }
-#img-bkn-header{
+.img-bkn-header{
     margin-left: 150px;
 }
 nav{
@@ -69,7 +69,7 @@ aside h1{
     margin-bottom: -10px;
 }
 
-#apoio{ 
+.apoio{ 
     float:right;
     width:300px;
     margin-top:10px;
@@ -87,13 +87,13 @@ footer p{
     color: black;
     font-size:16px;
 }
-#h1-home{
+.h1-home{
     text-align: center;
     color: purple;
     font-size: 50px;
     text-shadow: 2px 2px 8px black;
 }
-#h2-sobre{
+.h2-sobre{
     color: black;
     font-size: 30px;
     text-shadow: 2px 2px 8px white;
@@ -118,13 +118,18 @@ form{
 	width: 435px;
 	padding: 1em;
 	font-size: 24px;
-	margin-top: -5px;
+    margin-top: -5px;
 }
 fieldset{
     border-radius: 1em;
 }
-#msg{
-    width: 250px;
+.msgtext{
+    margin-left: 130px;
+    
+}
+.msg{
+    margin-left: 30px;
+    width: 300px;
     height: 100px;
     resize: none;
 }
@@ -132,7 +137,7 @@ button{
     margin-left: 150px;
     font-size: 20px;
 }
-#text-app{
+.text-app{
     font-size: 5px;
 }
 .detalhesparadisciplinas{
@@ -142,4 +147,15 @@ button{
     font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
     font-size:0.9em;
     line-height:1.8;
+}
+.botao:hover {
+    background-color: grey;
+}
+.img-bkns-pe{
+    width: 130px;
+    margin-left: 80px;
+    text-align:center;
+}
+.h3-fb{
+    text-align: center;
 }
