@@ -7,7 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">        
         <link rel="stylesheet" href="style/home.css">
-
+        <script src="js/telefone.js" defer></script>
         <title>Faculdade Bakanas</title>
     </head>
 
@@ -16,7 +16,7 @@
        <!-- Colocar em todas as Páginas--> 
        <main> 
             <header>
-                <img id="img-bkn-header"src="style/header.jpeg">            
+                <img class="img-bkn-header"src="style/header.jpeg">            
             </header>
         <!-- Colocar em todas as Páginas-->
             <nav>
@@ -24,16 +24,16 @@
                   <li><a href="home.html">Home</a></li>
                   <li><a href="listacursos.html">Lista de Cursos</a></li>
                   <li><a href="detalhescurso.html">Detalhes do Curso</a></li>
-                  <li><a href="dvd.html">Disciplina</a></li>
+                  <li><a href="disciplinas.html">Disciplina</a></li>
                   <li><a href="location.html">Noticias</a></li>
                 </ul>
             </nav>
 
             <article>
                
-                <h1 id="h1-home">Bakanas</h1>
+                <h1 class="h1-home">Bakanas</h1>
                 
-                <h2 id="h2-sobre">SOBRE A INSTITUIÇÃO</h2>                
+                <h2 class="h2-sobre">SOBRE A INSTITUIÇÃO</h2>                
                 <p align="justify">Fundada em 2018, a <span class="bkns">Faculdade Bakanas</span> é considerada uma das melhores instituições de tecnologia da América Latina devido ao seu intenso compromisso com a educação ao longo dos anos e à transformação da sociedade através da tecnologia.
                 Referência nas áreas de TI, Gestão e Design, a Impacta conta com cursos de Graduação, Pós-Graduação, Extensão, MBA e cursos técnicos que preparam seus alunos para os desafios do mercado de trabalho, além de um time de mestres e doutores com larga experiência profissional.</p>
                 
@@ -46,30 +46,31 @@
                 <p align="justify">A Instituição ainda conta com infraestrutura moderna, avaliação positiva do MEC, cursos estrelados no Guia do Estudante e parcerias estratégicas com grandes empresas para oferecer a melhor formação para os alunos.</p>        
                 
                     <h1 class="h1-grad">Contato</h1>
-                    <form action="">
+                    <form>
                         <fieldset>
                         <legend>Entre em Contato</legend>
                         <label for="Nome">Nome:</label>
-                        <input type="text" required autofocus id="nome" size="34"><br><br>
+                        <input type="text" required autofocus class="nome" autocomplete="off" size="34"><br><br>
                         <label for="email">Email:</label>
-                        <input type="email" required id="email" size="35"><br><br>
+                        <input type="email" required class="email" autocomplete="none" size="35"><br><br>
                         <label for="tel">Telefone:</label>
-                        <input type="tel" id="tel" size="25"><br>
-                        <input type="checkbox" name="wpp" id="text-wpp" value="wpp">Autorizo Contato via Whatsapp<br><br>
-                        <label>Mensagem</label><br>
-                        <textarea id="msg"></textarea><br>
-                        <button type="submit" id="botao">Enviar</button>
+                        <input type="text" name="telefone" class="telefone-f1" autocomplete="off" maxlength="15" size="25" required><br>
+                        <input type="checkbox" name="wpp" class="text-wpp" value="wpp"> <small>Autorizo Contato via Whatsapp</small><br><br>
+                        <label class="msgtext">Mensagem</label><br>
+                        <textarea class="msg"></textarea><br>
+                        <button type="submit" class="botao">Enviar</button>
                         </fieldset>
                     </form>
-                    <p>Entre em Contato conosco ou acesse a nossa lista de cursos para saber as nossas opções, nao perca <span class="bkns">TEMPO!</span></p>
+                    <p>Entre em Contato conosco ou acesse a nossa lista de cursos para saber as nossas opções.<br> <span class="bkns">  NÃO PERCA TEMPO!</span></p>
 
 
             </article>
 
-            <div id="apoio">
+            <div class="apoio">
                 <section class="fotos_apoio">
-                    <h3>Curso de Jogos Digitais</h3>
-                    <video width="275" height="299" src="video/Digitais.mp4" frameborder="0" allowfullscreen controls></video> 
+                    <h3 class="h3-fb">Faculdade Bakanas</h3>
+                    <img src="images/bkns-pe.jpeg" class="img-bkns-pe">
+                     
                 </section>
             </div>
             
