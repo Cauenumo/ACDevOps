@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">        
         <link rel="stylesheet" href="style/home.css">
+        <link rel="stylesheet" href="style/form.css">
         <script src="js/telefone.js" defer></script>
         <title>Faculdade Bakanas</title>
         <link rel="shortcut icon" href="favicon.png"/>
@@ -46,23 +47,87 @@
                 <p align="justify">O alto nível de empregabilidade é uma das principais características da <span class="bkns">Faculdade Bakanas</span>, que é reconhecida pelas maiores empresas do País, em que seus alunos garantem posições de destaque no mercado de trabalho após o término do curso.</p>
                 <p align="justify">A Instituição ainda conta com infraestrutura moderna, avaliação positiva do MEC, cursos estrelados no Guia do Estudante e parcerias estratégicas com grandes empresas para oferecer a melhor formação para os alunos.</p>        
                 
-                    <h1 class="h1-grad">Contato</h1>
-                    <form>
-                        <fieldset>
-                        <legend>Entre em Contato</legend>
-                        <label for="Nome">Nome:</label>
-                        <input type="text" required  class="nome" autocomplete="off" size="34"><br><br>
-                        <label for="email">Email:</label>
-                        <input type="email" required class="email" autocomplete="none" size="35"><br><br>
-                        <label for="tel">Telefone:</label>
-                        <input type="text" name="telefone" id="telefone-f1" autocomplete="off" maxlength="15" size="25" required><br>
-                        <input type="checkbox" name="wpp" class="text-wpp" value="wpp"> <small>Autorizo Contato via Whatsapp</small><br><br>
-                        <label class="msgtext">Mensagem</label><br>
-                        <textarea class="msg"></textarea><br>
-                        <button type="submit" class="botao">Enviar</button>
-                        </fieldset>
-                    </form>
-                    <p>Entre em Contato conosco ou acesse a nossa lista de cursos para saber as nossas opções.<br> <span class="bkns">  NÃO PERCA TEMPO!</span></p>
+                    <h1 class="h1-contato">Contato</h1>
+        <form>                                               
+            <div class="form-inscricao">
+                <form id="form-inscricao-vestibular" class="animated" method="post" action="javascript:void(0);" name="inscricao_vestibular">
+                    <div class="field-inscricao">
+                        <input id="nome" type="text" name="desnome" placeholder="Nome" required>
+                    </div>
+                    <div class="field-inscricao">
+                        <input id="email" type="email" name="desemail" placeholder="E-mail" required>
+                    </div>
+                    <div class="field-inscricao">
+                        <input name="telefone" id="telefone-f1" type="text" placeholder="Telefone" required>
+                    </div>
+                    <div class="field-inscricao">
+                        <input id="cpf" type="text" name="descpf" placeholder="CPF" required>
+                    </div>
+                    <div class="field-inscricao select-style">
+                        <select id="periodo" type="select" name="periodos" required>
+                            <option value="0">Período</option>
+                            <option value='1003990' >Manhã</option>
+                            <option value='1003659' >Noturno</option>
+                        </select>
+                    </div>
+                    <div  class="field-inscricao select-style">
+                        <select id="curso" type="select" name="curso" required> 
+                            <option value="0">Curso</option>
+                            <option value="Análise e Desenvolvimento de Sistemas">Análise e Desenvolvimento de Sistemas</option>
+                            <option value="Gestão dA Tecnologia da Informação">Ciência da Computação</option>
+                            <option value="Processos Gerenciais">Jogos Digitais</option>
+                            <option value="Produção Multimídia">Engenharia da Computação</option>
+                            <option value="Redes de Computadores">Redes de Computadores</option>
+                            <option value="Sistemas de Informação">Sistemas de Informação</option> 
+                        </select>
+                    </div>
+                    
+                    <div class="field-inscricao select-style">
+                        <select  type="select" name="grau-escolaridade" id="escolaridade">
+                            <option value="0">Grau de escolaridade</option>
+                            <option value="Médio Cursando">Médio Cursando</option>
+                            <option value="Médio Completo">Médio Completo</option>
+                            <option value="Ensino Superior Cursando">Ensino Superior Cursando</option>
+                            <option value="Ensino Superior Completo">Ensino Superior Completo</option>
+                            <option value="Pós Graduação Cursando">Pós Graduação Cursando</option>
+                            <option value="Pós Graduação Completo">Pós Graduação Completo</option>
+                        </select>
+                    </div>
+
+                    <div class="field-inscricao select-style">
+                        <select name="estados-brasil" id="uf" required>
+                            <option value="0">Estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <button id="btn-inscricao-vestibular" class="btn-vestibular btn-gradiente">Quero Informações!</button>
+                </form>
 
 
             </article>
